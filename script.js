@@ -7,10 +7,10 @@ cat_btn.addEventListener('click', getRandomCat);
 dog_btn.addEventListener('click', getRandomDog);
 
 function getRandomCat() {
-	fetch('https://aws.random.cat/meow')
+	fetch('https://randomfox.ca/floof/')
 		.then(res => res.json())
 		.then(data => {
-			cat_result.innerHTML = `<img src=${data.file} alt="cat" />`
+			cat_result.innerHTML = `<img src=${data.image} alt="fox" />`
 		});
 }
 
